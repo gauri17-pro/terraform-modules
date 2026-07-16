@@ -19,7 +19,8 @@ resource "aws_instance" "ec2_instance" {
 
     tags = {
         Name = "my-instance",
-        ManagedBy = "Terraform"
+        ManagedBy = "Terraform",
+        Owner = "gauri.shirkande@gmail.com"
     }
 }
 
