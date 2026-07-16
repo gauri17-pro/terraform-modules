@@ -18,7 +18,8 @@ resource "aws_instance" "ec2_instance" {
     key_name               = var.key_name
 
     tags = {
-        Name = "terraform-instance"
+        Name = "my-instance",
+        ManagedBy = "Terraform"
     }
 }
 
