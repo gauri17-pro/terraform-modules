@@ -25,7 +25,7 @@ resource "aws_instance" "ec2_instance" {
 }
 
 resource "aws_security_group" "sg" {
-    name = "sg-1"
+    name = "my-security-group"
 
     ingress {
         from_port   = 22
